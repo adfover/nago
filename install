@@ -7,7 +7,7 @@ fi
 
 CURDIR=`pwd`
 OLDGOPATH="$GOPATH"
-export GOPATH="$CURDIR"
+export GOPATH="$CURDIR:$GOPATH"
 
 gofmt -w src
 go install nago
